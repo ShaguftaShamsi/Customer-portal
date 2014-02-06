@@ -1,0 +1,33 @@
+	if($this->data['Profile']){
+                $image=$this->data['Profile']['image'];
+        	$imageTypes =array('image/gif','image/jpeg','image/png');
+ 		$uploadFolder='upload';
+                $uploadPath=WWW_ROOT.$uploadFolder;
+                  foreach($imageTypes as $type){
+                     print_r($image['type']);
+                     print_r($type);
+		   if($type==$image['type']){
+                       if($image['error']==0){
+                          $imageName=$image['name'];
+						  if(file_exists($uploadPath. '/'.$imageName)){   
+						     $imageName =date('His').$imageName;
+						  }
+			  			 $full_image_path =$uploadPath.'/'.$imageName;
+						  if(move_uploaded_file($image['tmp_name'],$full_image_path)){
+						   $this->Session->setFlash('File saved successfully');
+						  }else{
+						     $this->Session->setFlash('Problem in fileuploading file. Please try again ');
+						       }
+                         }else{
+                             $this->Session->setFlash('Error in uploading file');  
+                             }
+			}else{
+         	 $this->Session->setFlash('Unaccepted file type');}
+                 break;
+                   } 			     
+                  			
+         	}
+
+
+<legend> <?php echo _('General Information')?></legend>
+<legend> <?php echo _('Company Information')?></legend>

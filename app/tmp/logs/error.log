@@ -1,0 +1,2213 @@
+2014-01-29 17:43:12 Error: [MissingViewException] View file "/var/www/cake/app/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/cake/app/View/Users/index.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-29 17:50:42 Error: Fatal Error (1): Class 'AppMOdel' not found in [/var/www/cake/app/Model/User.php, line 4]
+2014-01-29 17:50:42 Error: [FatalErrorException] Class 'AppMOdel' not found
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppMOdel...', '/var/www/cake/a...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppMOdel...', '/var/www/cake/a...', 4, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppMOdel...', '/var/www/cake/a...', 4, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-29 17:52:48 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1049] Unknown database \'customer_portal\'',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/cake/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/cake/lib/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/cake/lib/Cake/Model/Model.php(3498): Model->setSource('users')
+#5 /var/www/cake/lib/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/cake/lib/Cake/View/Helper/FormHelper.php(207): Model->schema()
+#7 /var/www/cake/lib/Cake/View/Helper/FormHelper.php(459): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/cake/app/View/Users/index.ctp(3): FormHelper->create('User')
+#9 /var/www/cake/lib/Cake/View/View.php(929): include('/var/www/cake/a...')
+#10 /var/www/cake/lib/Cake/View/View.php(891): View->_evaluate('/var/www/cake/a...', Array)
+#11 /var/www/cake/lib/Cake/View/View.php(460): View->_render('/var/www/cake/a...')
+#12 /var/www/cake/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#13 /var/www/cake/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#14 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-30 10:19:09 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/cake/app/Controller/UsersController.php, line 10]
+2014-01-30 10:19:09 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/cake/a...', 10)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/cake/a...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/cake/a...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 10:19:27 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/cake/app/Controller/UsersController.php, line 10]
+2014-01-30 10:19:28 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/cake/a...', 10)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/cake/a...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/cake/a...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 10:19:59 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/cake/app/Controller/UsersController.php, line 10]
+2014-01-30 10:19:59 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/cake/a...', 10)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/cake/a...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/cake/a...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 10:20:33 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/var/www/cake/app/Controller/UsersController.php, line 11]
+2014-01-30 10:20:33 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 11, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 11, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 10:21:09 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/var/www/cake/app/Controller/UsersController.php, line 11]
+2014-01-30 10:21:09 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 11, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 11, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 10:21:51 Error: Fatal Error (4): syntax error, unexpected '[', expecting ')' in [/var/www/cake/app/Controller/UsersController.php, line 11]
+2014-01-30 10:21:51 Error: [FatalErrorException] syntax error, unexpected '[', expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 11, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 11, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 10:21:55 Error: Fatal Error (4): syntax error, unexpected '[', expecting ')' in [/var/www/cake/app/Controller/UsersController.php, line 11]
+2014-01-30 10:21:55 Error: [FatalErrorException] syntax error, unexpected '[', expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 11, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 11, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 10:22:00 Error: Fatal Error (4): syntax error, unexpected '[', expecting ')' in [/var/www/cake/app/Controller/UsersController.php, line 11]
+2014-01-30 10:22:00 Error: [FatalErrorException] syntax error, unexpected '[', expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 11, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 11, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 10:55:17 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /index
+Stack Trace:
+#0 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-30 10:56:09 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-30 11:43:52 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-30 11:43:54 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-30 12:01:25 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /index
+Stack Trace:
+#0 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-30 12:52:30 Error: [NotFoundException] Invalid 
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 12:52:49 Error: [NotFoundException] Invalid 
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 12:53:28 Error: [NotFoundException] Invalid 
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 12:53:39 Error: [NotFoundException] Invalid 
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 12:54:01 Error: [NotFoundException] Invalid 
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 12:55:05 Error: [NotFoundException] Invalid 
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 12:56:26 Error: [NotFoundException] Invalid 
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 12:57:07 Error: [NotFoundException] Invalid 
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 13:24:41 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-30 13:36:45 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/cake/app/View/Users/index.ctp, line 9]
+2014-01-30 13:36:45 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 9, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 9, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 13:37:34 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/cake/app/View/Users/index.ctp, line 9]
+2014-01-30 13:37:34 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 9, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 9, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 13:45:55 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /index
+Stack Trace:
+#0 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-30 14:22:01 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-30 15:40:55 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 15:47:08 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/cake/app/Controller/UsersController.php, line 24]
+2014-01-30 15:47:08 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 24, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 24, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 15:49:20 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 16:04:00 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 16:04:20 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 16:05:37 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 16:06:51 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 16:07:20 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 16:07:51 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 16:11:08 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 16:11:39 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:00:01 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:00:20 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:09:25 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:10:02 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/cake/app/Controller/UsersController.php, line 16]
+2014-01-30 17:10:02 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 16, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 16, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-30 17:11:11 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:12:11 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:14:19 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:15:05 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:16:38 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:16:55 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:17:55 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:18:31 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:19:33 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:21:26 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:22:45 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:24:21 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:29:29 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:29:49 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:31:42 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:31:59 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 17:36:13 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 09:35:14 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 10:32:15 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 10:33:30 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 10:33:51 Error: [NotFoundException] Invalid 
+Request URL: /users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 13:12:24 Error: Fatal Error (1): Call to a member function createSession() on a non-object in [/var/www/cake/app/Controller/UsersController.php, line 22]
+2014-01-31 13:12:24 Error: [FatalErrorException] Call to a member function createSession() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 13:14:13 Error: Fatal Error (1): Call to a member function createSession() on a non-object in [/var/www/cake/app/Controller/UsersController.php, line 22]
+2014-01-31 13:14:13 Error: [FatalErrorException] Call to a member function createSession() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 13:14:18 Error: Fatal Error (1): Call to a member function createSession() on a non-object in [/var/www/cake/app/Controller/UsersController.php, line 22]
+2014-01-31 13:14:18 Error: [FatalErrorException] Call to a member function createSession() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 13:14:32 Error: Fatal Error (1): Call to a member function createSession() on a non-object in [/var/www/cake/app/Controller/UsersController.php, line 22]
+2014-01-31 13:14:32 Error: [FatalErrorException] Call to a member function createSession() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 13:16:15 Error: Fatal Error (1): Call to a member function createSession() on a non-object in [/var/www/cake/app/Controller/UsersController.php, line 22]
+2014-01-31 13:16:15 Error: [FatalErrorException] Call to a member function createSession() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 13:21:02 Error: Fatal Error (1): Call to a member function createSession() on a non-object in [/var/www/cake/app/Controller/UsersController.php, line 22]
+2014-01-31 13:21:02 Error: [FatalErrorException] Call to a member function createSession() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 22, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 13:25:34 Error: Fatal Error (1): Call to a member function createSession() on a non-object in [/var/www/cake/app/Controller/UsersController.php, line 27]
+2014-01-31 13:25:34 Error: [FatalErrorException] Call to a member function createSession() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 27, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 27, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 13:35:25 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [/var/www/cake/app/Controller/UsersController.php, line 10]
+2014-01-31 13:35:25 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/cake/a...', 10)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/cake/a...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/cake/a...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 14:00:07 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [/var/www/cake/app/Controller/UsersController.php, line 11]
+2014-01-31 14:00:07 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/cake/a...', 11)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/cake/a...', 11, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/cake/a...', 11, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 14:02:19 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:09:18 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:18:03 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:19:33 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [/var/www/cake/app/Controller/UsersController.php, line 11]
+2014-01-31 14:19:33 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/cake/a...', 11)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/cake/a...', 11, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/cake/a...', 11, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 14:20:11 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:20:47 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [/var/www/cake/app/Controller/UsersController.php, line 11]
+2014-01-31 14:20:47 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/cake/a...', 11)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/cake/a...', 11, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/cake/a...', 11, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 14:25:51 Error: Fatal Error (64): Cannot redeclare UsersController::$components in [/var/www/cake/app/Controller/UsersController.php, line 11]
+2014-01-31 14:25:51 Error: [FatalErrorException] Cannot redeclare UsersController::$components
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/cake/a...', 11)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/cake/a...', 11, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/cake/a...', 11, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 14:29:43 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:30:20 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:30:31 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:31:08 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:31:18 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:32:44 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:34:31 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:35:45 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:36:24 Error: Fatal Error (1): Call to a member function createSession() on a non-object in [/var/www/cake/app/Controller/UsersController.php, line 29]
+2014-01-31 14:36:24 Error: [FatalErrorException] Call to a member function createSession() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 29, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 29, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 14:37:09 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:38:04 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:39:14 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:47:32 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:47:35 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:48:22 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:51:34 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:52:49 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:52:53 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:55:38 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 14:58:50 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:07:30 Error: [MissingComponentException] Component class SessionManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'SessionManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('SessionManager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:15:40 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/cake/app/Controller/UsersController.php, line 32]
+2014-01-31 15:15:40 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 32, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 32, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 15:16:21 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/cake/app/Controller/UsersController.php, line 33]
+2014-01-31 15:16:21 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 33, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 33, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 15:17:06 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:17:45 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:18:40 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:23:22 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:23:28 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:32:09 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:32:30 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:32:46 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:02 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:03 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:03 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:04 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:04 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:04 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:06 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:06 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:07 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:08 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:08 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:08 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:33:09 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:36:20 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/li2014-01-31 15:40:49 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:42:44 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 15:43:23 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:12:03 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:16:44 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:20:47 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:20:49 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:20:50 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:22:06 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:22:07 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:22:12 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:22:22 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:32:26 Error: [MissingPluginException] Plugin Manager could not be found.
+Exception Attributes: array (
+  'plugin' => 'Manager',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Core/App.php(365): CakePlugin::path('Manager')
+#1 /var/www/cake/lib/Cake/Core/App.php(226): App::pluginPath('Manager')
+#2 /var/www/cake/lib/Cake/Core/App.php(547): App::path('Controller/Comp...', 'Manager')
+#3 [internal function]: App::load('ManagerComponen...')
+#4 [internal function]: spl_autoload_call('ManagerComponen...')
+#5 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ManagerComponen...')
+#6 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager.Manager', Array)
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-31 16:33:13 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:37:31 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 16:56:57 Error: [MissingComponentException] Component class ManagerComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Manager', Array)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-31 17:02:21 Error: Fatal Error (1): Call to a member function write() on a non-object in [/var/www/cake/app/Controller/Component/ManagerComponent.php, line 8]
+2014-01-31 17:02:21 Error: [FatalErrorException] Call to a member function write() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 8, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 8, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 17:03:23 Error: Fatal Error (1): Call to a member function write() on a non-object in [/var/www/cake/app/Controller/Component/ManagerComponent.php, line 9]
+2014-01-31 17:03:23 Error: [FatalErrorException] Call to a member function write() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 9, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 9, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 17:03:26 Error: Fatal Error (1): Call to a member function write() on a non-object in [/var/www/cake/app/Controller/Component/ManagerComponent.php, line 9]
+2014-01-31 17:03:26 Error: [FatalErrorException] Call to a member function write() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 9, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 9, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 17:16:05 Error: Fatal Error (1): Call to a member function write() on a non-object in [/var/www/cake/app/Controller/Component/ManagerComponent.php, line 9]
+2014-01-31 17:16:05 Error: [FatalErrorException] Call to a member function write() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 9, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 9, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-31 17:27:37 Error: Fatal Error (1): Call to undefined method ManagerComponent::destory() in [/var/www/cake/app/Controller/UsersController.php, line 48]
+2014-01-31 17:27:37 Error: [FatalErrorException] Call to undefined method ManagerComponent::destory()
+Request URL: /users/logout
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/cake/a...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/cake/a...', 48, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/cake/a...', 48, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-03 12:29:25 Error: [MissingControllerException] Controller class SupportController could not be found.
+Exception Attributes: array (
+  'class' => 'SupportController',
+  'plugin' => NULL,
+)
+Request URL: /support
+Stack Trace:
+#0 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-03 12:30:57 Error: [MissingControllerException] Controller class SupportController could not be found.
+Exception Attributes: array (
+  'class' => 'SupportController',
+  'plugin' => NULL,
+)
+Request URL: /support/setup
+Stack Trace:
+#0 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-03 16:47:09 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/cake/app/Controller/UsersController.php, line 40]
+2014-02-03 16:47:10 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cake/
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 40, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 40, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-03 16:48:03 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/var/www/cake/app/Model/User.php, line 33]
+2014-02-03 16:48:03 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /cake/users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 33, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 33, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-03 16:59:26 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'hasHashedPass' at line 1
+Request URL: /cake/users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('hasHashedPass', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('hasHashedPass', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('hasHashedPass', Array, Array)
+#4 /var/www/cake/lib/Cake/Model/Model.php(800): DboSource->query('hasHashedPass', Array, Object(User))
+#5 /var/www/cake/app/Controller/UsersController.php(24): Model->__call('hasHashedPass', Array)
+#6 /var/www/cake/app/Controller/UsersController.php(24): User->hasHashedPass(Array, NULL)
+#7 [internal function]: UsersController->login()
+#8 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-03 17:01:07 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:02:42 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:04:21 Error: Fatal Error (1): Call to undefined function SHA256() in [/var/www/cake/app/Model/User.php, line 23]
+2014-02-03 17:04:21 Error: [FatalErrorException] Call to undefined function SHA256()
+Request URL: /cake/users/login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/cake/a...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/cake/a...', 23, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/cake/a...', 23, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-03 17:12:35 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:16:30 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:17:30 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:18:54 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:20:37 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:28:05 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:29:25 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:36:00 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:37:37 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:43:42 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:45:00 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-03 17:46:12 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-04 09:35:38 Error: [NotFoundException] Invalid 
+Request URL: /cake/users/login
+Stack Trace:
+#0 [internal function]: UsersController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-04 12:20:23 Error: Fatal Error (4): syntax error, unexpected '>' in [/var/www/cake/app/Model/Profile.php, line 49]
+2014-02-04 12:20:23 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /cake/profiles
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 49, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 49, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-04 12:38:28 Error: [MissingActionException] Action ProfilesController::create() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProfilesController',
+  'action' => 'create',
+)
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-04 14:09:10 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/var/www/cake/app/Controller/ProfilesController.php, line 21]
+2014-02-04 14:09:10 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 21, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 21, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-04 14:10:27 Error: Fatal Error (1): Call to a member function getID() on a non-object in [/var/www/cake/app/Controller/ProfilesController.php, line 14]
+2014-02-04 14:10:27 Error: [FatalErrorException] Call to a member function getID() on a non-object
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 14, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 14, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-04 14:11:20 Error: Fatal Error (1): Call to a member function getID() on a non-object in [/var/www/cake/app/Controller/ProfilesController.php, line 14]
+2014-02-04 14:11:20 Error: [FatalErrorException] Call to a member function getID() on a non-object
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 14, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 14, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-04 14:18:59 Error: Fatal Error (1): Call to a member function findByEmail() on a non-object in [/var/www/cake/app/Controller/ProfilesController.php, line 14]
+2014-02-04 14:18:59 Error: [FatalErrorException] Call to a member function findByEmail() on a non-object
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake/a...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake/a...', 14, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake/a...', 14, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-04 16:26:11 Error: [NotFoundException] Id is less then 1 
+Request URL: /cake/profiles/view
+Stack Trace:
+#0 [internal function]: ProfilesController->view()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-04 16:27:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `cu...')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Profile), Array, Array)
+#4 /var/www/cake/app/Controller/ProfilesController.php(22): Model->save(Array)
+#5 [internal function]: ProfilesController->create()
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-04 16:29:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `cu...')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Profile), Array, Array)
+#4 /var/www/cake/app/Controller/ProfilesController.php(22): Model->save(Array)
+#5 [internal function]: ProfilesController->create()
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-04 16:29:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `cu...')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Profile), Array, Array)
+#4 /var/www/cake/app/Controller/ProfilesController.php(22): Model->save(Array)
+#5 [internal function]: ProfilesController->create()
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-04 16:31:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `cu...')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Profile), Array, Array)
+#4 /var/www/cake/app/Controller/ProfilesController.php(22): Model->save(Array)
+#5 [internal function]: ProfilesController->create()
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-04 16:32:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `cu...')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Profile), Array, Array)
+#4 /var/www/cake/app/Controller/ProfilesController.php(23): Model->save(Array)
+#5 [internal function]: ProfilesController->create()
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-04 16:33:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `cu...')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Profile), Array, Array)
+#4 /var/www/cake/app/Controller/ProfilesController.php(23): Model->save(Array)
+#5 [internal function]: ProfilesController->create()
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-04 16:34:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `cu...')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Profile), Array, Array)
+#4 /var/www/cake/app/Controller/ProfilesController.php(23): Model->save(Array)
+#5 [internal function]: ProfilesController->create()
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-04 16:34:27 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/cake/app/Controller/ProfilesController.php, line 16]
+2014-02-04 16:34:27 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 16, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 16, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-04 16:35:56 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/cake/app/Controller/ProfilesController.php, line 16]
+2014-02-04 16:35:56 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 16, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 16, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-04 16:36:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `cu...')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Profile), Array, Array)
+#4 /var/www/cake/app/Controller/ProfilesController.php(23): Model->save(Array)
+#5 [internal function]: ProfilesController->create()
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-04 16:38:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `cu...')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Profile), Array, Array)
+#4 /var/www/cake/app/Controller/ProfilesController.php(23): Model->save(Array)
+#5 [internal function]: ProfilesController->create()
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-02-04 16:39:26 Error: [NotFoundException] Id is less then 1 
+Request URL: /cake/profiles/view
+Stack Trace:
+#0 [internal function]: ProfilesController->view()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-04 16:41:28 Error: [NotFoundException] Id is less then 1 
+Request URL: /cake/profiles/view
+Stack Trace:
+#0 [internal function]: ProfilesController->view()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-04 16:42:47 Error: [NotFoundException] Id is less then 1 
+Request URL: /cake/profiles/view
+Stack Trace:
+#0 [internal function]: ProfilesController->view()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-04 16:43:23 Error: [NotFoundException] Id is less then 1 
+Request URL: /cake/profiles/view
+Stack Trace:
+#0 [internal function]: ProfilesController->view()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-04 16:45:13 Error: [NotFoundException] Id is less then 1 
+Request URL: /cake/profiles/view
+Stack Trace:
+#0 [internal function]: ProfilesController->view()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-04 16:59:35 Error: Fatal Error (4): syntax error, unexpected T_ELSE, expecting T_FUNCTION in [/var/www/cake/app/Controller/ProfilesController.php, line 39]
+2014-02-04 16:59:35 Error: [FatalErrorException] syntax error, unexpected T_ELSE, expecting T_FUNCTION
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 39, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 39, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-04 17:20:19 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/var/www/cake/app/Controller/ProfilesController.php, line 37]
+2014-02-04 17:20:19 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /cake/profiles/view
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 37, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 37, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-06 10:07:36 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/var/www/cake/app/Controller/ProfilesController.php, line 38]
+2014-02-06 10:07:36 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cake/profiles/view
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 38, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 38, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-06 11:02:38 Error: [MissingActionException] Action ProfilesController::creates() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProfilesController',
+  'action' => 'creates',
+)
+Request URL: /cake/profiles/creates
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-06 11:32:38 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [/var/www/cake/app/Controller/ProfilesController.php, line 31]
+2014-02-06 11:32:38 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 31, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 31, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-06 11:37:38 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/cake/app/Controller/ProfilesController.php, line 64]
+2014-02-06 11:37:38 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-06 11:37:40 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/cake/app/Controller/ProfilesController.php, line 64]
+2014-02-06 11:37:40 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-06 11:43:53 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/cake/app/Controller/ProfilesController.php, line 64]
+2014-02-06 11:43:53 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-06 11:45:04 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/cake/app/Controller/ProfilesController.php, line 64]
+2014-02-06 11:45:04 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-06 11:45:38 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/cake/app/Controller/ProfilesController.php, line 64]
+2014-02-06 11:45:38 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-06 11:45:45 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/cake/app/Controller/ProfilesController.php, line 64]
+2014-02-06 11:45:45 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cake/profiles/create
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake/a...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake/a...', 64, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-06 12:31:03 Error: [MissingHelperException] Helper class FOrmHelper could not be found.
+Exception Attributes: array (
+  'class' => 'FOrmHelper',
+  'plugin' => false,
+)
+Request URL: /cake/profiles/view/2
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('FOrm')
+#1 /var/www/cake/lib/Cake/View/View.php(818): HelperCollection->__isset('FOrm')
+#2 /var/www/cake/app/View/Profiles/view.ctp(20): View->__get('FOrm')
+#3 /var/www/cake/lib/Cake/View/View.php(929): include('/var/www/cake/a...')
+#4 /var/www/cake/lib/Cake/View/View.php(891): View->_evaluate('/var/www/cake/a...', Array)
+#5 /var/www/cake/lib/Cake/View/View.php(460): View->_render('/var/www/cake/a...')
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
