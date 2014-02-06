@@ -1,0 +1,11 @@
+<?php
+ 
+class SessionManagerComponent extends obbject{
+
+  function createSession(){
+  }
+  function destroySession(){
+  }
+}
+
+?>
